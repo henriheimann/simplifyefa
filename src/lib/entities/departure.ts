@@ -16,11 +16,11 @@ export class Departure {
 
 	private static parseDateFromEntry(entry: any, dateTimeKey: string): Date {
 		return new Date(
-			entry[dateTimeKey]['year'],
-			entry[dateTimeKey]['month'],
-			entry[dateTimeKey]['day'],
-			entry[dateTimeKey]['hour'],
-			entry[dateTimeKey]['minute'],
+			Number(entry[dateTimeKey]['year']),
+			Number(entry[dateTimeKey]['month']) - 1,
+			Number(entry[dateTimeKey]['day']),
+			Number(entry[dateTimeKey]['hour']),
+			Number(entry[dateTimeKey]['minute']),
 		)
 	}
 
