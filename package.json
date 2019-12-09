@@ -1,0 +1,31 @@
+{
+  "name": "simplifyefa",
+  "version": "0.0.5",
+  "description": "Typescript/Javascript wrapper for EFA (Elektronische Fahrplanauskunft)",
+  "keywords": [
+    "EFA",
+    "Open Data",
+    "Nahverkehr"
+  ],
+  "author": "Henri Heimann",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "lint": "tslint -p tsconfig.json"
+  },
+  "dependencies": {
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.8"
+  },
+  "devDependencies": {
+    "@types/node": "^12.12.15",
+    "@types/request-promise-native": "^1.0.17",
+    "tslint": "^5.20.1",
+    "typescript": "^3.7.3"
+  }
+}
